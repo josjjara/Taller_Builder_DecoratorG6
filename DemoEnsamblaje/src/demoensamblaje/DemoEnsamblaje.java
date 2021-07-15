@@ -5,7 +5,7 @@
  */
 package demoensamblaje;
 
-import sinpatron.*;
+import patrones .*;
 
 /**
  *
@@ -64,6 +64,7 @@ public class DemoEnsamblaje {
         System.out.println(v2.getPrestaciones());
         
         //--------------------------------------------------
+        
 
         //TODO: Agregar accesorios: radio y sensores de retro a v1
         //Debería agregar estos accesorios como parte de las prestaciones del vehiculo
