@@ -2,19 +2,22 @@ package patrones.patronBuilder;
 
 import patrones.Vehiculo;
 
-public class vehiculoBuilder {
+public abstract class vehiculoBuilder {
 	protected Vehiculo vehiculo;
 	
 	public void DefinirColor() {}
 	
-	public void DefinirdireccionAsistida() {}
+	public abstract void DefinirdireccionAsistida();
 	
-	public void DefinirMarca() {}
+	public abstract void DefinirMarca();
 	
-	public void DefinirModelo() {}
+	public abstract void DefinirModelo();
 	
-	public void ConstruirMotor() {}
+	public abstract void ConstruirMotor();
 	
-	public void ConstruirCarroceria() {}
+	public abstract void ConstruirCarroceria();
 	
+	public Vehiculo GetVehículo() {
+		return vehiculo;
+	}
 }
