@@ -7,6 +7,8 @@ package demoensamblaje;
 
 import patrones.patronBuilder.*;
 import patrones.patronDecorator.*;
+import patrones.patronBuilder.VehiculoDirector;
+
 
 /**
  *
@@ -39,14 +41,14 @@ public class DemoEnsamblaje {
         //Debería agregar estos accesorios como parte de las prestaciones del vehiculo
         v1 = new VehiculoConSensores(new VehiculoConRadio(v1));
         //Mostrar prestaciones actualizadas del vehiculo
-        System.out.println(v1.getPrestaciones());
+        System.out.println("Vehiculo 1:\n"+v1.getPrestaciones());
         //--------------------------------------------------
         
         //TODO: Agregar accesorios: camara de retro a v2
         //Debería agregar estos accesorios como parte de las prestaciones del vehiculo
         v2 = new VehiculoConCamaraR(v2);
         //Mostrar prestaciones actualizadas del vehiculo
-        System.out.println(v2.getPrestaciones());
+        System.out.println("Vehiculo 2:\n" + v2.getPrestaciones());
     }
     
 }

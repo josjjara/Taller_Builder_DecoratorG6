@@ -1,6 +1,6 @@
 package patrones.patronBuilder;
-import patrones.*;
-
+import patrones.Carroceria;
+import patrones.MotorDiesel;
 
 public class CitroenXsarBuilder extends VehiculoBuilder{
 	@Override
