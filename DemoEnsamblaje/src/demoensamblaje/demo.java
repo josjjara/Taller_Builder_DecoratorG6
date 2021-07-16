@@ -12,6 +12,12 @@ public class demo {
 		
 		// Definimos el director citroen
 		CitroenXsarBuilder citroen = new CitroenXsarBuilder();
+		citroen.ConstruirCarroceria();
+		citroen.ConstruirMotor();
+		citroen.DefinirColor();
+		citroen.DefinirdireccionAsistida();
+		citroen.DefinirMarca();
+		citroen.DefinirModelo();
 		vehiculoDirector directorCitroen = new vehiculoDirector(citroen);
 		//Construir el vehículo
 		directorCitroen.ConstruirVehiculo();
@@ -21,6 +27,12 @@ public class demo {
 		
 		// Definimos el director audi
 		AudiSportbackBuilder audi = new AudiSportbackBuilder();
+		audi.DefinirColor();
+		audi.ConstruirCarroceria();
+		audi.ConstruirMotor();
+		audi.DefinirdireccionAsistida();
+		audi.DefinirMarca();
+		audi.DefinirModelo();
 		vehiculoDirector directorAudi = new vehiculoDirector(audi);
 		//Construir el vehículo
 		directorAudi.ConstruirVehiculo();
@@ -28,9 +40,9 @@ public class demo {
 		Vehiculo vAudi = directorAudi.getVehiculo();
 		
 		//Mostrar por pantalla
-		System.out.println("PRIMER VEHICULO: " + vCitroen  );
+		System.out.println("PRIMER VEHICULO: " + vCitroen.color);
 		System.out.println();
-		System.out.println("SEGUNDO VEHICULO: " + vAudi);
+		System.out.println("SEGUNDO VEHICULO: " + vAudi.color);
 	}
 
 }
