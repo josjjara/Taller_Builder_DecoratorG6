@@ -9,7 +9,7 @@ package patrones;
  *
  * @author david_000
  */
-interface IMotor {
+public interface IMotor {
     String ConsumirCombustible();
     String InyectarCombustible(int cantidad);
     String RealizarEscape();

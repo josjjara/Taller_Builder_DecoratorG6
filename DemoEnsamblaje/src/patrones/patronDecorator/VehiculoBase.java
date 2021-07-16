@@ -1,15 +1,7 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package patrones;
+package patrones.patronDecorator;
+import patrones.*;
 
-/**
- *
- * @author david_000
- */
-public class Vehiculo {
+public class VehiculoBase implements Vehiculo{
    public String color;
    public boolean direccionAsistida;
    public String marca;
@@ -25,7 +17,6 @@ public class Vehiculo {
        n1 += (direccionAsistida ? "Con ":"Sin ") + "dirección asistida" + "\n";
        n1 += "Carrocería de " + tipoCarroceria.material + "\n";
        n1 += "Respuesta del motor: " + motor.InyectarCombustible(100) + "\n";
-       
        return n1;
    }
     

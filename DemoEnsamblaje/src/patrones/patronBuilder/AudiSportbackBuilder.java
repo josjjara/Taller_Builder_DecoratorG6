@@ -1,43 +1,37 @@
 package patrones.patronBuilder;
-
-import patrones.Carroceria;
 import patrones.MotorDiesel;
-import patrones.Vehiculo;
+import patrones.Carroceria;
 
-public class AudiSportbackBuilder extends vehiculoBuilder{
-	Vehiculo v = new Vehiculo();
+
+public class AudiSportbackBuilder extends VehiculoBuilder{
 	@Override
 	public void DefinirdireccionAsistida() {
-		// TODO Auto-generated method stub
-		v.direccionAsistida = true;
+		vehiculo.direccionAsistida = true;
 	}
 
 	@Override
 	public void DefinirMarca() {
-		// TODO Auto-generated method stub
-		v.marca = "Audi";
+		vehiculo.marca = "Audi";
 	}
 
 	@Override
 	public void DefinirModelo() {
-		// TODO Auto-generated method stub
-		v.modelo = "A3 Sportback";
+		vehiculo.modelo = "A3 Sportback";
 	}
 
 	@Override
 	public void ConstruirMotor() {
-		// TODO Auto-generated method stub
-		v.motor = new MotorDiesel();
+		vehiculo.motor = new MotorDiesel();
 	}
 
 	@Override
 	public void ConstruirCarroceria() {
 		// TODO Auto-generated method stub
-		v.tipoCarroceria = new Carroceria();
-		v.tipoCarroceria.tipoCarroceria = "deportivo";
-		v.tipoCarroceria.habitaculoReforzado = true;
-		v.tipoCarroceria.material = "fibra de carbono";
-		v.color = "plata cromado";
+		vehiculo.tipoCarroceria = new Carroceria();
+		vehiculo.tipoCarroceria.tipoCarroceria = "deportivo";
+		vehiculo.tipoCarroceria.habitaculoReforzado = true;
+		vehiculo.tipoCarroceria.material = "fibra de carbono";
+		vehiculo.color = "plata cromado";
 	}
 
 }
