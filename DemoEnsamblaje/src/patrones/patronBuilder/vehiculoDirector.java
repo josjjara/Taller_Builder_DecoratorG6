@@ -2,7 +2,7 @@ package patrones.patronBuilder;
 
 import patrones.Vehiculo;
 
-public abstract class vehiculoDirector {
+public  class vehiculoDirector {
 	private vehiculoBuilder builder;
 	
 	public vehiculoDirector(vehiculoBuilder builder) {
@@ -17,14 +17,7 @@ public abstract class vehiculoDirector {
 		builder.DefinirMarca();
 		builder.DefinirModelo();
 		
-		if ((builder.GetVehículo().tipoCarroceria.tipoCarroceria == "deportivo") && (builder.GetVehículo().direccionAsistida == false)) {
-			try {
-				throw new Exception ("Error en el ensamblado");
-			} catch (Exception e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-		}
+		
 	}
 	
 	public Vehiculo getVehiculo() {

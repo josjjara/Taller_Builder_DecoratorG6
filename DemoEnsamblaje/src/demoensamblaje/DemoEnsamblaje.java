@@ -6,6 +6,7 @@
 package demoensamblaje;
 
 import patrones .*;
+import patrones.patronBuilder.vehiculoDirector;
 
 /**
  *
